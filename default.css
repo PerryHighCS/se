@@ -131,7 +131,15 @@ and (max-device-width : 900px) {
     text-align: right;
 }
 
+/* Show dropdown when hovering over its menu */
+.videodrawer:hover .video, 
+.videodrawer:focus .video,
+.videodrawer:active .video {
+    display: block;
+}
+
 .video {
+    display: none;
     width: 100%;
     text-align: center;
     margin: 10px;
