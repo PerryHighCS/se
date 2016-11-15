@@ -131,7 +131,11 @@ and (max-device-width : 900px) {
     text-align: right;
 }
 
-/* Show dropdown when hovering over its menu */
+.videodrawer .a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Show videos when selected*/
 .video:target {
     display: block;
 }
