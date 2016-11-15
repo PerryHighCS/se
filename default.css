@@ -132,8 +132,7 @@ and (max-device-width : 900px) {
 }
 
 /* Show dropdown when hovering over its menu */
-.videodrawer:focus .video,
-.videodrawer:active .video {
+.videodrawer:target .video {
     display: block;
 }
 
