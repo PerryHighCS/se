@@ -131,7 +131,7 @@ and (max-device-width : 900px) {
     text-align: right;
 }
 
-.videodrawer .a {
+.videodrawer a {
     text-decoration: none;
     color: inherit;
 }
