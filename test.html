@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>HTML Test</title>
+        <script>
+        	function testHTML() {
+        		var text = document.getElementById("inputText");
+        		var html = text.value;
+        		var testZone = document.getElementById("testZone");
+        		testZone.innerHTML = html;
+        	}
+        </script>
+    </head>
+    <body>
+		<textarea rows="10" cols="80" id="inputText">Input html to test here</textarea>
+		<br>
+		<button onclick="testHTML();">Test</button>
+		<span id="testZone"></span>
+    </body>
+</html>
