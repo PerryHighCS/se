@@ -33,7 +33,7 @@
         	function play(cellid) {
         		var cell = document.getElementById(cellid);
         		if (!won && cell.textContent == "") {	
-        			cell.textContent = player;
+        			cell.textContent = getLetter(player);
         			
 		    		if (player == "X") {	
 		    			player = "O";
@@ -43,7 +43,7 @@
 		    		}
 		    		
 		    		var playerSpan = document.getElementById("player");
-		    		playerSpan.textContent = getLetter(player);
+		    		playerSpan.textContent = player;
         		}
         		
         		checkWinner();
