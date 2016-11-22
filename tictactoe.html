@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <style>
+	        @font-face {
+			    font-family: 'Geholiday';
+			    src: url('Geholiday.ttf') format('truetype');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+			
+        	table {
+        		border: 0;
+        		margin-left: auto;
+        		margin-right: auto;
+        	}
+        	td {
+        		font-family: 'Geholiday';
+        		width: 100px;
+        		height: 100px;
+        		border: solid 1px;
+        		text-align: center;
+        		font-size: 80px;
+        	}
+        </style>
+        <script>
+        	var player = "X";
+        	var won = false;
+        	
+        	function play(cellid) {
+        		var cell = document.getElementById(cellid);
+        		if (!won && cell.textContent == "") {	
+        			cell.textContent = player;
+        			
+		    		if (player == "X") {	
+		    			player = "O";
+		    		}
+		    		else {
+		    			player = "X";
+		    		}
+		    		
+		    		var playerSpan = document.getElementById("player");
+		    		playerSpan.textContent = player;
+        		}
+        		
+        		checkWinner();
+        	}
+        	
+        	function checkWinner() {
+        		compareCells("1", "2", "3");
+        		compareCells("4", "5", "6");
+        		compareCells("7", "8", "9");
+        		
+        		compareCells("1", "4", "7");
+        		compareCells("2", "5", "8");
+        		compareCells("3", "6", "9");
+        		
+        		compareCells(1, 5, 9);
+        		compareCells(3, 5, 7)
+        	}
+        	
+        	function compareCells(a, b, c) {
+        		var cell1, cell2, cell3;
+        		
+        		cell1 = document.getElementById(a);
+        		cell2 = document.getElementById(b);
+        		cell3 = document.getElementById(c);
+        		
+        		if ((cell1.textContent == cell2.textContent) && (cell2.textContent == cell3.textContent) && cell1.textContent != "") {
+        			cell1.style.backgroundColor = "red";
+        			cell2.style.backgroundColor = "red";
+        			cell3.style.backgroundColor = "red";
+        			cell1.style.color = "white";
+        			cell2.style.color = "white";
+        			cell3.style.color = "white";
+        			won = true;
+        			
+        			var status = document.getElementById("status");
+        			status.textContent = player + " WINS!!!";
+        		}
+        	}
+        	
+        </script>
+    </head>
+    <body>
+    	<h1 style="text-align: center;">Tic-Tac-Toe</h1>
+		<table>
+			<tr>
+				<td id="1" onclick="play(this.id)"></td>
+				<td id="2" onclick="play(this.id)"></td>
+				<td id="3" onclick="play(this.id)"></td>
+			</tr>
+			<tr>
+				<td id="4" onclick="play(this.id)"></td>
+				<td id="5" onclick="play(this.id)"></td>
+				<td id="6" onclick="play(this.id)"></td>
+			</tr>
+			<tr>
+				<td id="7" onclick="play(this.id)"></td>
+				<td id="8" onclick="play(this.id)"></td>
+				<td id="9" onclick="play(this.id)"></td>
+			</tr>
+		</table>
+		<H3 id="status" style="text-align: center;"><span id="player">X</span>'s move</H3>
+    </body>
+</html>
