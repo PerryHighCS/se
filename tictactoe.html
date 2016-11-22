@@ -87,10 +87,7 @@
         	function getLetter(player) {
         		var h = holiday();
         		
-        		if (h == null) {
-        			return player;
-        		}
-        		else if (h == "Christmas") {
+        		if (h == "Christmas") {
         			if (player == "X") {
         				return "p";
         			}
@@ -137,6 +134,9 @@
         			else {
         				return "h";
         			}
+        		}
+			else {
+        			return player;
         		}
         	}
         	
