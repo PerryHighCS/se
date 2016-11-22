@@ -7,7 +7,7 @@
         <style>
 	        @font-face {
 			    font-family: 'Geholiday';
-			    src: url('Geholiday.ttf') format('truetype');
+			    src: url('https://perryma.tk/se/Geholiday.ttf') format('truetype');
 			    font-weight: normal;
 			    font-style: normal;
 			}
@@ -43,7 +43,7 @@
 		    		}
 		    		
 		    		var playerSpan = document.getElementById("player");
-		    		playerSpan.textContent = player;
+		    		playerSpan.textContent = getLetter(player);
         		}
         		
         		checkWinner();
@@ -80,6 +80,66 @@
         			
         			var status = document.getElementById("status");
         			status.textContent = player + " WINS!!!";
+        		}
+        	}
+        	
+        	function holiday() {
+        		return "Christmas";
+        	}
+        	
+        	function getLetter(player) {
+        		var h = holiday();
+        		
+        		if (h == null) {
+        			return player;
+        		}
+        		else if (h == "Christmas") {
+        			if (player == "X") {
+        				return "p";
+        			}
+        			else {
+        				return "o";
+        			}
+        		}
+        		else if (h == "Thanksgiving") {
+        			if (player == "X") {
+        				return "n";
+        			}
+        			else {
+        				return "m";
+        			}
+        		}
+        		else if (h == "Easter") {
+        			if (player == "X") {
+        				return "d";
+        			}
+        			else {
+        				return "e";
+        			}
+        		}
+        		else if (h == "Valentines") {
+        			if (player == "X") {
+        				return "c";
+        			}
+        			else {
+        				return "a";
+        			}
+        		}
+        		else if (h == "Halloween") {
+        			if (player == "X") {
+        				return "j";
+        			}
+        			else {
+        				return "i";
+        			}
+        		}
+        		else if (h == "4th of July") {
+        			if (player == "X") {
+        				return "g";
+        			}
+        			else {
+        				return "h";
+        			}
         		}
         	}
         	
