@@ -5,6 +5,7 @@
     position: relative;
     padding: 0px;
     display:  block;
+    z-index: 100;
 }
 
 /* Menus in the menubar should look like menus */
