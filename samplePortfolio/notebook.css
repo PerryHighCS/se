@@ -1,9 +1,9 @@
-
+/* Make the whole page a light grey */
 html {
     background-color: #ddd;
 }
 
-
+/* Make the actual body white, centered on the grey, with a sans-serif font */
 body {
     background: #fff;
     max-width: 900px;
@@ -12,11 +12,13 @@ body {
     font-family: "Calibri", sans-serif;
 }
 
+/* Give the page title an underline across the page */
 h1 {
     border-bottom: 1px solid;
     margin-bottom: 0px;
 }
 
+/* Make script tags with a code class visible */
 script.code {
     display: block;
     overflow: auto;
@@ -28,6 +30,7 @@ script.code {
     padding: 5px;
 }
 
+/* Make the console output look like a console */
 #Console {
     display: none;
     font-family: monospace;
@@ -42,6 +45,7 @@ script.code {
     padding: 5px;
 }
 
+/* The script title should be prominant */
 .title {
     display: block;
     position: relative;
@@ -50,6 +54,7 @@ script.code {
     font-weight: bold;
 }
 
+/* Give buttons in the script title some space */
 .title button {
     margin: 2px 5px 2px 2px;    
 }
