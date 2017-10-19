@@ -46,6 +46,13 @@ script.code {
     padding: 5px;
 }
 
+/* Prepare the drawing canvas */
+#Drawing {
+    display: none;
+    margin: auto;
+    width: 100%;
+}
+
 /* The script title should be prominant */
 .title {
     display: block;
