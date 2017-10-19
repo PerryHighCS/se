@@ -1,22 +1,23 @@
 
-  html {
+html {
     background-color: #ddd;
-  }
+}
 
-  body {
-    background-color: #FFF;
+
+body {
+    background: #fff;
     max-width: 900px;
     padding: 10px;
     margin: 8px auto 8px;
     font-family: "Calibri", sans-serif;
-  }
+}
 
-  h1 {
+h1 {
     border-bottom: 1px solid;
     margin-bottom: 0px;
-  }
+}
 
-  script.code {
+script.code {
     display: block;
     overflow: auto;
     max-height: 600px;
@@ -27,9 +28,9 @@
     padding-left: 3px;
     padding-right: 3px;
     padding-top: 0px;
-  }
+}
 
-  #Console {
+#Console {
     display: none;
     font-family: monospace;
     white-space: pre;
@@ -40,14 +41,14 @@
     box-sizing: border-box;         /* For IE and modern versions of Chrome */
     -moz-box-sizing: border-box;    /* For Firefox                          */
     -webkit-box-sizing: border-box; /* For Safari                           */
-  }
+}
 
-  .title {
+.title {
     display: block;
     position: relative;
     background-color: #777;
-  }
+}
 
-  .title button {
+.title button {
     margin: 2px 5px 2px 2px ;
-  }
+}
