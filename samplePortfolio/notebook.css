@@ -25,10 +25,7 @@ script.code {
     white-space: pre;
     border: 1px solid;
     background-color: #ccc;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 #Console {
@@ -42,14 +39,17 @@ script.code {
     box-sizing: border-box;         /* For IE and modern versions of Chrome */
     -moz-box-sizing: border-box;    /* For Firefox                          */
     -webkit-box-sizing: border-box; /* For Safari                           */
+    padding: 5px;
 }
 
 .title {
     display: block;
     position: relative;
     background-color: #777;
+    color: #fff;
+    font-weight: bold;
 }
 
 .title button {
-    margin: 2px 5px 2px 2px ;
+    margin: 2px 5px 2px 2px;    
 }
