@@ -1,0 +1,79 @@
+/* The menubar should be fancy */
+.menubar {
+    background: #aaa;
+    font-size: 24px;
+    position: relative;
+    padding: 0px;
+    display:  block;
+}
+
+/* Menus in the menubar should look like menus */
+.menu {
+    position: relative;
+    padding: 0px 10px 0px 10px;
+    display:  inline-block;
+    text-decoration: none;
+}
+
+/* hide dropdown menus */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    width: 220px;
+    padding: 0 10px 10px 10px;
+    box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Get rid of the list styling for the menu*/
+.dropdown ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Show dropdown when hovering over its menu */
+.menu:hover .dropdown, 
+.menu:focus .dropdown,
+.menu:active .dropdown {
+	display: block;
+}
+
+/* Change the link color on hover */
+.dropdown li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Indent menus items */
+.dropdown li {
+    padding-left: 20px;
+}
+
+/* Make menu links look less like links */
+.dropdown a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Page content should be centered */
+.content {
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+/* The first column of page content */
+.col1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* The second column of page content */
+.col2 {
+    margin-left: 10px;
+    display: inline-block;    
+    vertical-align: top;
+}
